@@ -1,4 +1,4 @@
-package allen.springdemo.allenpetclinic;
+package allen.springdemo.petclinicweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

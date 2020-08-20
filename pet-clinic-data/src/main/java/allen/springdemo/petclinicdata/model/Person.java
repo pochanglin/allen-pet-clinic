@@ -1,4 +1,4 @@
-package allen.springdemo.allenpetclinic.model;
+package allen.springdemo.petclinicdata.model;
 
 public class Person {
     private String firstName;
