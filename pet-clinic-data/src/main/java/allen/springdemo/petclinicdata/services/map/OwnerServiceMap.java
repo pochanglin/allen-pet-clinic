@@ -1,10 +1,10 @@
 package allen.springdemo.petclinicdata.services.map;
 
 import allen.springdemo.petclinicdata.model.Owner;
-import allen.springdemo.petclinicdata.services.CrudService;
+import allen.springdemo.petclinicdata.services.OwnerService;
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements CrudService<Owner,Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
