@@ -1,4 +1,4 @@
-package allen.springdemo.petclinicdata.services;
+package allen.springdemo.petclinic.services;
 
 import java.util.Set;
 

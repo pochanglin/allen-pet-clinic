@@ -1,11 +1,9 @@
-package allen.springdemo.petclinicweb.bootstrap;
+package allen.springdemo.petclinic.bootstrap;
 
-import allen.springdemo.petclinicdata.model.Owner;
-import allen.springdemo.petclinicdata.model.Vet;
-import allen.springdemo.petclinicdata.services.OwnerService;
-import allen.springdemo.petclinicdata.services.VetService;
-import allen.springdemo.petclinicdata.services.map.OwnerServiceMap;
-import allen.springdemo.petclinicdata.services.map.VetServiceMap;
+import allen.springdemo.petclinic.model.Owner;
+import allen.springdemo.petclinic.model.Vet;
+import allen.springdemo.petclinic.services.OwnerService;
+import allen.springdemo.petclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -14,9 +12,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

@@ -1,9 +1,12 @@
-package allen.springdemo.petclinicdata.services.map;
+package allen.springdemo.petclinic.services.map;
 
-import allen.springdemo.petclinicdata.model.Pet;
-import allen.springdemo.petclinicdata.services.CrudService;
+import allen.springdemo.petclinic.model.Pet;
+import allen.springdemo.petclinic.services.CrudService;
+import org.springframework.stereotype.Service;
+
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet,Long> implements CrudService<Pet,Long> {
 
     @Override
